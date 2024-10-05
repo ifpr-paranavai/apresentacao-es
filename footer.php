@@ -6,6 +6,6 @@
             <a href="<?php echo $data['footer']['instagram_course']; ?>" target="_blank" class="text-white">Instagram do Curso</a> |
             <a href="<?php echo $data['footer']['instagram_campus']; ?>" target="_blank" class="text-white">Instagram do Campus</a>
         </p>
-        <p class="mt-3"><?php echo $data['footer']['copyright']; ?></p>
+        <p class="mt-3"><?php echo $data['footer']['copyright']; ?> <i>By Frank W. C. de Oliveira</i></p>
     </div>
 </footer>
