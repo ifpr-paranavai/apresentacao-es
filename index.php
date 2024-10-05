@@ -12,6 +12,14 @@ $data = json_decode($content, true);
     <title><?php echo $data['header']['title']; ?> - IFPR Campus Paranavaí</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
+
+    <meta property="og:title" content="Engenharia de Software - IFPR Campus Paranavaí">
+    <meta property="og:description" content="Conheça o curso de Engenharia de Software do IFPR Campus Paranavaí. Um curso gratuito, reconhecido pelo MEC e com foco em inovação tecnológica e desenvolvimento de software.">
+    <meta property="og:url" content="https://eswifpr.tecnoif.com.br">
+    <meta property="og:type" content="website">
+
+    <meta name="description" content="Curso de Engenharia de Software do IFPR Campus Paranavaí. Formação gratuita com ênfase em desenvolvimento de software, inovação tecnológica e preparação para o mercado de trabalho.">
+
 </head>
 
 <body>
