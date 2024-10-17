@@ -1,4 +1,4 @@
-s<header class="section-header text-center py-4">
+<header class="section-header text-center py-4">
     <h1><?php echo $data['header']['title']; ?></h1>
     <p><?php echo $data['header']['subtitle']; ?></p>
 
