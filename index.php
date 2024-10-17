@@ -32,7 +32,7 @@ $data = json_decode($content, true);
 
             <div class="text-right mt-4">
                 <a href="matriz.php" class="btn btn-secondary">Matriz Curricular</a>
-                <a href="https://portaldocandidato.ifpr.edu.br/" target="_blank" class="btn btn-danger">Inscrições Abertas</a>
+                <a href="https://portaldocandidato.ifpr.edu.br/" target="_blank" class="btn btn-danger">Inscrições Abertas - INSCREVA-SE</a>
             </div>
         </div>
     </section>
@@ -49,7 +49,7 @@ $data = json_decode($content, true);
                             <div class="card-body">
                                 <h5 class="card-title" style="color: #22223B;"><?php echo $project['title']; ?></h5>
                                 <p class="card-text"><?php echo $project['description']; ?></p>
-                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                                <!-- <a href="#" class="btn btn-primary">Saiba Mais</a> -->
                             </div>
                         </div>
                     </div>

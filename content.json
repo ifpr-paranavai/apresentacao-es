@@ -44,16 +44,28 @@
     "projects": {
         "title": "Projetos Desenvolvidos",
         "description": "Veja alguns projetos desenvolvidos no curso",
-        "items": [
+        "items": [            
             {
-                "title": "Projeto 1",
-                "description": "Descrição breve do projeto desenvolvido por alunos.",
-                "image": "imagens/projeto1.jpg"
+                "title": "Cronos",
+                "description": "Desenvolvido por alunos do IFPR - Campus Paranavaí, o Cronos é o Sistema de Gerenciamento das Atividades Complementares do IFPR, utilizado para registrar e acompanhar o desenvolvimento das atividades extracurriculares exigidas no currículo dos cursos. Ele permite que alunos, professores e a secretaria façam a gestão de atividades complementares, facilitando o controle e o cumprimento dessas exigências acadêmicas.",
+                "image": "imagens/projeto1.png"
             },
             {
-                "title": "Projeto 2",
-                "description": "Descrição breve do projeto desenvolvido por alunos.",
-                "image": "imagens/projeto2.jpg"
+                "title": "Cursos para melhor idade",
+                "description": "Alunos do curso de ES ministram cursos para e melhor idade - inclusão digital e medidas de segurança para evitar golpes digitais. Desenvolvimento de competências interdisciplinares da atividade de extensão que promove a aprendizagem ativa, uma formação cidadã em que estimula os estudantes a pesquisar e intervir em situações reais da comunidade.",
+                "image": "imagens/projeto2.jpeg"
+            }
+            ,
+            {
+                "title": "Cosmetic Survey",
+                "description": "Aplicativo desenvolvido pelo acadêmico Andrey Silva Cordeiro para a Gestão de Vendas de Produtos Cosméticos. Esse projeto foi realizado como parte do Trabalho de Conclusão de Curso (TCC) do curso de Engenharia de Software, com o objetivo de criar uma solução eficiente para gerenciar vendas e organizar os processos envolvidos na comercialização de cosméticos.",
+                "image": "imagens/projeto3.jpg"
+            }
+            ,
+            {
+                "title": "Cosmetic Survey",
+                "description": "O site da AMAER (Associação Maringaense de Aeromodelismo) foi desenvolvido pelo projeto de extensão CDT-IFPR (Centro de Desenvolvimento Tecnológico) do IFPR Campus Paranavaí. A iniciativa, conduzida por alunos do curso de Engenharia de Software, visa tanto a divulgação da associação quanto o gerenciamento dos associados. O projeto permite que os alunos apliquem seus conhecimentos no desenvolvimento de um sistema real ao mesmo tempo que atende uma necessidade da comunidade.",
+                "image": "imagens/projeto4.png"
             }
         ]
     },
@@ -70,19 +82,47 @@
                 "description": "Ambiente equipado com computadores de última geração para os alunos desenvolverem seus projetos.",
                 "image": "imagens/laboratorio1.jpeg"
             }
+            ,
+            {
+                "title": "Laboratório de Informática 3",
+                "description": "Ambiente equipado com computadores de última geração para os alunos desenvolverem seus projetos.",
+                "image": "imagens/laboratorio1.jpeg"
+            }
+            ,
+            {
+                "title": "Laboratório de Informática 4",
+                "description": "Ambiente equipado com computadores de última geração para os alunos desenvolverem seus projetos.",
+                "image": "imagens/laboratorio1.jpeg"
+            }
+            ,
+            {
+                "title": "Laboratório de Informática 5",
+                "description": "Ambiente equipado com computadores de última geração para os alunos desenvolverem seus projetos.",
+                "image": "imagens/laboratorio1.jpeg"
+            }
         ]
     },
     "testimonials": {
         "title": "Depoimentos de Alunos",
         "items": [
             {
-                "quote": "O curso de Engenharia de Software foi fundamental para o meu crescimento profissional. Os professores são excelentes e os projetos me prepararam para o mercado.",
-                "student": "Aluno 1",
+                "quote": "Chega a ser clichê o que vou dizer aqui, mas eu adoro meu curso e tudo o que ele me proporciona. Desenvolvi diferentes projetos, tanto na área de Sistemas Embarcados quanto em Web, Mobile e até jogos digitais. Tudo o que aprendi e ainda aprendo me agrega muito e será a base do grande profissional que almejo ser.",
+                "student": "Renato Augusto Platz",
                 "year": "3º ano"
             },
             {
-                "quote": "As oportunidades que o curso oferece são únicas, desde projetos práticos até laboratórios com tecnologia de ponta.",
-                "student": "Aluno 2",
+                "quote": "Curso muito bom e com professores dedicados.",
+                "student": "Mateus Stainer Rakoski",
+                "year": "2º ano"
+            },
+            {
+                "quote": "Esse curso abriu oportunidades inimagináveis para mim, coisas que nunca havia visto nos anos de ensino médio técnico. Além disso, a faculdade proporciona uma estrutura excelente e um corpo docente notável.",
+                "student": "Mateus Stainer Rakoski",
+                "year": "3º ano"
+            },
+            {
+                "quote": "Estou há 7 anos no IFPR, onde iniciei com o ensino técnico e, após concluir, decidi voltar para cursar a graduação. A experiência no ensino técnico me abriu diversas oportunidades, e a escolha de continuar no IFPR para o ensino superior foi natural, pois a graduação tem potencializado ainda mais cada uma dessas oportunidades.",
+                "student": "Vitor Tavares de Oliveira",
                 "year": "3º ano"
             }
         ]
