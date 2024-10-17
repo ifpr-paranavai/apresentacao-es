@@ -63,7 +63,7 @@
             }
             ,
             {
-                "title": "Cosmetic Survey",
+                "title": "Projeto de Extensão",
                 "description": "O site da AMAER (Associação Maringaense de Aeromodelismo) foi desenvolvido pelo projeto de extensão CDT-IFPR (Centro de Desenvolvimento Tecnológico) do IFPR Campus Paranavaí. A iniciativa, conduzida por alunos do curso de Engenharia de Software, visa tanto a divulgação da associação quanto o gerenciamento dos associados. O projeto permite que os alunos apliquem seus conhecimentos no desenvolvimento de um sistema real ao mesmo tempo que atende uma necessidade da comunidade.",
                 "image": "imagens/projeto4.png"
             }
@@ -75,30 +75,36 @@
             {
                 "title": "Laboratório de Informática 1",
                 "description": "Ambiente equipado com computadores de última geração para os alunos desenvolverem seus projetos.",
-                "image": "imagens/laboratorio1.jpeg"
+                "image": "imagens/laboratorio1.jpg"
             },
             {
                 "title": "Laboratório de Informática 2",
                 "description": "Ambiente equipado com computadores de última geração para os alunos desenvolverem seus projetos.",
-                "image": "imagens/laboratorio1.jpeg"
+                "image": "imagens/laboratorio2.jpg"
             }
             ,
             {
                 "title": "Laboratório de Informática 3",
                 "description": "Ambiente equipado com computadores de última geração para os alunos desenvolverem seus projetos.",
-                "image": "imagens/laboratorio1.jpeg"
+                "image": "imagens/laboratorio3.jpg"
             }
             ,
             {
                 "title": "Laboratório de Informática 4",
                 "description": "Ambiente equipado com computadores de última geração para os alunos desenvolverem seus projetos.",
-                "image": "imagens/laboratorio1.jpeg"
+                "image": "imagens/laboratorio4.jpg"
             }
             ,
             {
-                "title": "Laboratório de Informática 5",
-                "description": "Ambiente equipado com computadores de última geração para os alunos desenvolverem seus projetos.",
-                "image": "imagens/laboratorio1.jpeg"
+                "title": "Laboratório de Hardware e Robótica",
+                "description": "Ambiente equipado com equipamentos diversificados para os alunos desenvolverem seus projetos.",
+                "image": "imagens/laboratorio5.jpg"
+            }
+            ,
+            {
+                "title": "Ambiente Virtual de Aprendizagem",
+                "description": "Utilizamos o moodle como Ambiente Virtual de Aprendizagem. Uma plataforma onde alunos e professores podem acessar materiais didáticos, realizar atividades, participar de fóruns e acompanhar o progresso acadêmico. Através do AVA, o IFPR proporciona suporte para o ensino de maneira virtual.",
+                "image": "imagens/ava.png"
             }
         ]
     },
