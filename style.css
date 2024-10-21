@@ -4,7 +4,7 @@ body {
 }
 
 .section-header {
-    background-color: #F9A826;
+    background: linear-gradient(90deg, #3602ba, #cb6ce6);;
     color: white;
     padding: 60px 0;
     text-align: center;

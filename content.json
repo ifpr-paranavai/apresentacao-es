@@ -13,10 +13,6 @@
             "class": "badge bg-info mr-1"
         },
         {
-            "text": "Conceito 4/5",
-            "class": "badge bg-warning text-dark mr-1"
-        },
-        {
             "text": "4 Anos de Duração",
             "class": "badge bg-primary mr-1"
         },
@@ -113,22 +109,22 @@
         "items": [
             {
                 "quote": "Chega a ser clichê o que vou dizer aqui, mas eu adoro meu curso e tudo o que ele me proporciona. Desenvolvi diferentes projetos, tanto na área de Sistemas Embarcados quanto em Web, Mobile e até jogos digitais. Tudo o que aprendi e ainda aprendo me agrega muito e será a base do grande profissional que almejo ser.",
-                "student": "Renato Augusto Platz",
+                "student": "Renato Augusto",
                 "year": "3º ano"
             },
             {
                 "quote": "Curso muito bom e com professores dedicados.",
-                "student": "Mateus Stainer Rakoski",
+                "student": "Mateus Stainer",
                 "year": "2º ano"
             },
             {
                 "quote": "Esse curso abriu oportunidades inimagináveis para mim, coisas que nunca havia visto nos anos de ensino médio técnico. Além disso, a faculdade proporciona uma estrutura excelente e um corpo docente notável.",
-                "student": "Mateus Stainer Rakoski",
+                "student": "Keren Apuque",
                 "year": "3º ano"
             },
             {
                 "quote": "Estou há 7 anos no IFPR, onde iniciei com o ensino técnico e, após concluir, decidi voltar para cursar a graduação. A experiência no ensino técnico me abriu diversas oportunidades, e a escolha de continuar no IFPR para o ensino superior foi natural, pois a graduação tem potencializado ainda mais cada uma dessas oportunidades.",
-                "student": "Vitor Tavares de Oliveira",
+                "student": "Vitor Tavares",
                 "year": "3º ano"
             }
         ]
