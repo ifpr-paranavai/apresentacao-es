@@ -20,6 +20,18 @@ $data = json_decode($content, true);
 
     <meta name="description" content="Curso de Engenharia de Software do IFPR Campus Paranavaí. Formação gratuita com ênfase em desenvolvimento de software, inovação tecnológica e preparação para o mercado de trabalho.">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-04QSVEGFH4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-04QSVEGFH4');
+    </script>
 </head>
 
 <body>
