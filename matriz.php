@@ -9,7 +9,7 @@ $data = json_decode($content, true);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $data['header']['title']; ?> - IFPR Campus Paranavaí</title>
+    <title><?php echo $data['header']['title']; ?> - Matriz Curricular</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
 
