@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bacharelado em Engenharia de Software - IFPR Campus Paranavaí</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-code me-2"></i>
+                ES IFPR
+            </a>
+            
+            <button class="navbar-toggler custom-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#laboratorios">Laboratórios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                    </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="matriz.html">Matriz Curricular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary px-3 ms-2" href="https://portaldocandidato.ifpr.edu.br/" target="_blank">Inscreva-se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <div class="hero-badges mb-4">
+                            <span class="badge bg-success me-2">Curso Gratuito</span>
+                            <span class="badge bg-info me-2">Reconhecido pelo MEC</span>
+                            <span class="badge bg-warning text-dark me-2">4 Anos de Duração</span>
+                        </div>
+                        
+                        <h1 class="hero-title mb-4">
+                            Bacharelado em 
+                            Engenharia de Software
+                        </h1>
+                        <p class="hero-subtitle mb-4">
+                            IFPR Campus Paranavaí
+                        </p>
+                        
+                        <p class="hero-description mb-5">
+                            Forme-se em uma das áreas mais promissoras da tecnologia. 
+                            Desenvolva software, gerencie projetos e inove com tecnologia de ponta.
+                        </p>
+                        
+                        <div class="hero-buttons d-flex flex-wrap gap-3 justify-content-start">
+                            <a href="https://portaldocandidato.ifpr.edu.br/" target="_blank" class="btn btn-primary btn-lg">
+                                <i class="fas fa-user-plus me-2"></i>
+                                Inscreva-se Agora
+                            </a>
+                            <a href="#sobre" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-info-circle me-2"></i>
+                                Saiba Mais
+                            </a>
+                            <a href="https://www.instagram.com/infoesw.ifpr.pvai/" target="_blank" class="btn btn-lg" style="background: linear-gradient(45deg, #E4405F, #F77737, #F99441); color: white; border: none;">
+                                <i class="fab fa-instagram me-2"></i>
+                                Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-visual">
+                        <div class="floating-card">
+                            <i class="fas fa-laptop-code"></i>
+                            <h5>Desenvolvimento</h5>
+                            <p>Web, Mobile & Desktop</p>
+                        </div>
+                        <div class="floating-card">
+                            <i class="fas fa-project-diagram"></i>
+                            <h5>Gestão de Projetos</h5>
+                            <p>Metodologias Ágeis</p>
+                        </div>
+                        <div class="floating-card">
+                            <i class="fas fa-brain"></i>
+                            <h5>Inovação</h5>
+                            <p>Tecnologias Emergentes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre o Curso -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Sobre o Curso</h2>
+                    <p class="section-subtitle">
+                        Uma formação completa e alinhada com as necessidades do mercado atual
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="about-content">
+                        <p class="lead">
+                            Com duração de 4 anos, o curso de Bacharelado em Engenharia de Software 
+                            visa formar profissionais capacitados para atuar no desenvolvimento de 
+                            software, gestão de projetos e inovação tecnológica.
+                        </p>
+                        
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-success"></i>
+                                <span>Formação completa em 4 anos</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-success"></i>
+                                <span>Reconhecido pelo MEC</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-success"></i>
+                                <span>Professores qualificados</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-success"></i>
+                                <span>Laboratórios modernos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>4 Anos</h3>
+                                <p>Duração do Curso</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>100+</h3>
+                                <p>Alunos Formados</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>95%</h3>
+                                <p>Empregabilidade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos Desenvolvidos -->
+    <section id="projetos" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Projetos Desenvolvidos</h2>
+                    <p class="section-subtitle">
+                        Veja alguns projetos desenvolvidos pelos nossos alunos
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-content">
+                            <h4>Cronos</h4>
+                            <p>
+                                Sistema de Gerenciamento das Atividades Complementares do IFPR, 
+                                utilizado para registrar e acompanhar o desenvolvimento das 
+                                atividades extracurriculares exigidas no currículo dos cursos.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Web Development</span>
+                                <span class="tag">Sistema de Gestão</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="project-content">
+                            <h4>Cursos para Melhor Idade</h4>
+                            <p>
+                                Projeto de extensão onde alunos ministram cursos de inclusão 
+                                digital e medidas de segurança para evitar golpes digitais, 
+                                promovendo aprendizagem ativa e formação cidadã.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Extensão</span>
+                                <span class="tag">Inclusão Digital</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-content">
+                            <h4>Cosmetic Survey</h4>
+                            <p>
+                                Aplicativo para Gestão de Vendas de Produtos Cosméticos, 
+                                desenvolvido como TCC com objetivo de criar uma solução 
+                                eficiente para gerenciar vendas e organizar processos comerciais.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Mobile App</span>
+                                <span class="tag">E-commerce</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="project-content">
+                            <h4>Site AMAER</h4>
+                            <p>
+                                Site da Associação Maringaense de Aeromodelismo desenvolvido 
+                                pelo projeto de extensão CodeLabIFPR, visando divulgação da 
+                                associação e gerenciamento dos associados.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Website</span>
+                                <span class="tag">Projeto de Extensão</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Laboratórios -->
+    <section id="laboratorios" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Laboratórios e Ambientes</h2>
+                    <p class="section-subtitle">
+                        Infraestrutura moderna para o desenvolvimento dos seus projetos
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="lab-card">
+                        <div class="lab-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h5>Laboratórios de Informática</h5>
+                        <p>4 laboratórios equipados com computadores de última geração para desenvolvimento de projetos.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="lab-card">
+                        <div class="lab-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h5>Lab. Hardware e Robótica</h5>
+                        <p>Ambiente equipado com equipamentos diversificados para desenvolvimento de projetos de hardware.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="lab-card">
+                        <div class="lab-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h5>Ambiente Virtual</h5>
+                        <p>Plataforma Moodle para acesso a materiais didáticos, atividades e acompanhamento acadêmico.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Depoimentos de Alunos</h2>
+                    <p class="section-subtitle">
+                        Veja o que nossos alunos falam sobre o curso
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="swiper testimonials-swiper" data-aos="fade-up">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <i class="fas fa-quote-left quote-icon"></i>
+                                        <p>
+                                            "Chega a ser clichê o que vou dizer aqui, mas eu adoro meu curso e tudo o que ele me proporciona. 
+                                            Desenvolvi diferentes projetos, tanto na área de Sistemas Embarcados quanto em Web, Mobile e até jogos digitais. 
+                                            Tudo o que aprendi e ainda aprendo me agrega muito e será a base do grande profissional que almejo ser."
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <div class="author-avatar">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="author-info">
+                                            <h6>Aluno do Curso</h6>
+                                            <span>Engenharia de Software</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <i class="fas fa-quote-left quote-icon"></i>
+                                        <p>
+                                            "Curso muito bom e com professores dedicados."
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <div class="author-avatar">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="author-info">
+                                            <h6>Aluno do Curso</h6>
+                                            <span>Engenharia de Software</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <i class="fas fa-quote-left quote-icon"></i>
+                                        <p>
+                                            "Esse curso abriu oportunidades inimagináveis para mim, coisas que nunca havia visto nos anos de ensino médio técnico. 
+                                            Além disso, a faculdade proporciona uma estrutura excelente e um corpo docente notável."
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <div class="author-avatar">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="author-info">
+                                            <h6>Aluno do Curso</h6>
+                                            <span>Engenharia de Software</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <i class="fas fa-quote-left quote-icon"></i>
+                                        <p>
+                                            "Estou há 7 anos no IFPR, onde iniciei com o ensino técnico e, após concluir, decidi voltar para cursar a graduação. 
+                                            A experiência no ensino técnico me abriu diversas oportunidades, e a escolha de continuar no IFPR para o ensino superior foi natural, 
+                                            pois a graduação tem potencializado ainda mais cada uma dessas oportunidades."
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <div class="author-avatar">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="author-info">
+                                            <h6>Aluno do Curso</h6>
+                                            <span>Engenharia de Software</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="inscricoes" class="py-5 cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="text-white mb-4">Pronto para Começar sua Jornada?</h2>
+                    <p class="text-white-50 mb-5 lead">
+                        Inscreva-se agora e faça parte da próxima geração de engenheiros de software
+                    </p>
+                    
+                    <div class="cta-buttons">
+                        <a href="matriz.html" class="btn btn-light btn-lg me-3">
+                            <i class="fas fa-file-alt me-2"></i>
+                            Matriz Curricular
+                        </a>
+                        <a href="https://portaldocandidato.ifpr.edu.br/" target="_blank" class="btn btn-primary btn-lg">
+                            <i class="fas fa-user-plus me-2"></i>
+                            Inscrições Abertas
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3">
+                        <i class="fas fa-code me-2"></i>
+                        Engenharia de Software
+                    </h5>
+                    <p class="text-white-50">
+                        IFPR Campus Paranavaí - Formando os profissionais do futuro em tecnologia e inovação.
+                    </p>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h6 class="mb-3">Links Úteis</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="matriz.html" class="text-white-50 text-decoration-none">Matriz Curricular</a></li>
+                        <li><a href="https://portaldocandidato.ifpr.edu.br/" target="_blank" class="text-white-50 text-decoration-none">Inscrição</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h6 class="mb-3">Contato</h6>
+                    <div class="contact-info">
+                        <p class="text-white-50 mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            IFPR Campus Paranavaí
+                        </p>
+                        <p class="text-white-50 mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            es.paranavai@ifpr.edu.br
+                        </p>
+                        <p class="text-white-50 mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            (44) 3482-0110
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-white-50 mb-0">
+                        &copy; 2024 IFPR Campus Paranavaí. Todos os direitos reservados.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                     
+                        <a href="https://www.instagram.com/infoesw.ifpr.pvai/" class="text-white-50 me-3">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                      
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+
