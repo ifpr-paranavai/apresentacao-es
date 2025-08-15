@@ -17,6 +17,8 @@ body {
     overflow-x: hidden;
     max-width: 100vw;
     position: relative;
+    /* Fallback padding to avoid content under fixed navbar before JS adjusts */
+    padding-top: var(--nav-height, 72px);
 }
 
 /* Custom Properties */
@@ -33,11 +35,17 @@ body {
     --shadow-heavy: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     --border-radius: 12px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --nav-height: 72px; /* default header height */
 }
 
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+/* Ensure anchors don't scroll under the fixed navbar */
+section {
+    scroll-margin-top: var(--nav-height, 72px);
 }
 
 /* Navigation */
@@ -516,6 +524,16 @@ html {
     padding: 2rem 0;
 }
 
+/* Make slides and cards stretch to equal heights */
+.testimonials-swiper .swiper-wrapper {
+    align-items: stretch;
+}
+
+.testimonials-swiper .swiper-slide {
+    display: flex;
+    height: auto;
+}
+
 .testimonial-card {
     background: white;
     border-radius: var(--border-radius);
@@ -523,11 +541,15 @@ html {
     box-shadow: var(--shadow-light);
     margin: 1rem;
     border: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .testimonial-content {
     position: relative;
     margin-bottom: 2rem;
+    flex: 1;
 }
 
 .quote-icon {
@@ -547,6 +569,7 @@ html {
 .testimonial-author {
     display: flex;
     align-items: center;
+    margin-top: auto;
 }
 
 .author-avatar {

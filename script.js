@@ -6,10 +6,40 @@ document.addEventListener('DOMContentLoaded', function() {
         once: true,
         offset: 100
     });
+    // Ensure content is not hidden under fixed navbar
+    function updateBodyTopPadding() {
+        const navbar = document.querySelector('.navbar');
+        if (!navbar) return;
+        const h = navbar.offsetHeight || 0;
+        document.body.style.paddingTop = h + 'px';
+        document.documentElement.style.setProperty('--nav-height', h + 'px');
+    }
+    updateBodyTopPadding();
+    window.addEventListener('load', updateBodyTopPadding);
+    window.addEventListener('resize', () => {
+        // debounce
+        clearTimeout(window.__padTimer);
+        window.__padTimer = setTimeout(updateBodyTopPadding, 100);
+    });
 });
 
 // Initialize Swiper for testimonials
 document.addEventListener('DOMContentLoaded', function() {
+    function equalizeTestimonialHeights() {
+        const slides = document.querySelectorAll('.testimonials-swiper .swiper-slide .testimonial-card');
+        if (!slides.length) return;
+        // reset heights
+        slides.forEach(s => s.style.height = 'auto');
+        // compute max
+        let max = 0;
+        slides.forEach(s => {
+            const h = s.offsetHeight;
+            if (h > max) max = h;
+        });
+        // apply
+        slides.forEach(s => s.style.height = max + 'px');
+    }
+
     const swiper = new Swiper('.testimonials-swiper', {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -29,8 +59,17 @@ document.addEventListener('DOMContentLoaded', function() {
             1024: {
                 slidesPerView: 3,
             }
+        },
+        on: {
+            init: () => setTimeout(equalizeTestimonialHeights, 50),
+            resize: equalizeTestimonialHeights,
+            slideChange: () => setTimeout(equalizeTestimonialHeights, 50),
         }
     });
+
+    // Also equalize after fonts/images load
+    window.addEventListener('load', () => setTimeout(equalizeTestimonialHeights, 50));
+    window.addEventListener('resize', () => setTimeout(equalizeTestimonialHeights, 100));
 });
 
 // Navbar scroll effect
@@ -51,7 +90,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+            const navbar = document.querySelector('.navbar');
+            const navHeight = navbar ? navbar.offsetHeight : 80;
+            const offsetTop = target.getBoundingClientRect().top + window.scrollY - navHeight;
             window.scrollTo({
                 top: offsetTop,
                 behavior: 'smooth'
@@ -157,6 +198,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (window.innerWidth < 992) {
                     navbarCollapse.classList.remove('show');
                     navbarToggler.classList.add('collapsed');
+                    setTimeout(() => {
+                        // update padding after collapse
+                        const evt = new Event('resize');
+                        window.dispatchEvent(evt);
+                    }, 300);
                 }
             });
         });
@@ -169,6 +215,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 navbarCollapse.classList.contains('show')) {
                 navbarCollapse.classList.remove('show');
                 navbarToggler.classList.add('collapsed');
+                setTimeout(() => {
+                    const evt = new Event('resize');
+                    window.dispatchEvent(evt);
+                }, 300);
             }
         });
     }
